@@ -298,6 +298,20 @@ ul {
   }
 }
 /**CONTACTO**/
+.barra__mensaje {
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    transition: all .4s ease-in-out;
+}
+.barra__mensaje--error {
+    background-color: rgba(185,0,0,0.8);    
+}
+.barra__mensaje--exito {
+    background-color: rgba(0, 185, 43, 0.8);
+}
 .contacto-bg {
     height: 40rem;
     background-image: url(../img/contacto.jpg);
@@ -310,6 +324,11 @@ ul {
     width: 95%;
     padding: 1rem;
     border-radius: .5rem;
+}
+@media (min-width: 998px) {
+  .formulario {
+      width: 75%;
+  }
 }
 @media (min-width: 768px) {
     .formulario {
@@ -330,7 +349,7 @@ ul {
     font-family: var(--parrafo);
 }
 .campo__field {
-    border: .1rem solid var(--primarioTransparente);
+    border: .1rem solid var(--primario);
     background-color: #efeff1;
     padding: 2rem;
     width: 100%;
